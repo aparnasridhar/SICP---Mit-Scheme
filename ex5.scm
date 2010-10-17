@@ -21,7 +21,8 @@ Solution:
 ;Applicative order of evaluation would mean that the parameters of the function test would be evaluated before applying
 ;the function to it.  In this case since one of the parameters is a function call to p, that is resolved first before
 ;applying the test function to 0 and (p).  Since p is a function defined in terms of itself, trying to resolve this
-;parameter would result in an infinite loop of a function calling itself.  Scheme would reach maximum recursion depth ;and error out.  
+;parameter would result in an infinite loop of a function calling itself.  Scheme would reach maximum recursion depth
+;and error out.  
 
 ;However normal order evaluation in this case would apply test to its parameters 0 (p) and the first condition of test,
 ;would cause return 0 and exit out of the function. 
