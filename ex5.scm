@@ -1,4 +1,4 @@
-Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is using applicative-order evaluation or normal-order evaluation. He defines the following two procedures:
+;Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is using applicative-order ;evaluation or normal-order evaluation. He defines the following two procedures:
 
 (define (p)(p))
 
