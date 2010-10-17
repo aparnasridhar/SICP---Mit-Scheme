@@ -28,20 +28,20 @@ Below is a sequence of expressions. What is the result printed by the interprete
 ;Value: #f 
 
 (if (and (> b a) (< b (* a b))) 
-	b 
-	a) 
+b 
+a) 
 ;Value: 4 
 
 (cond ((= a 4) 6) 
-	  ((= b 4) (+ 6 7 a)) 
-	  (else 25)) 
+	((= b 4) (+ 6 7 a)) 
+	(else 25)) 
 ;Value: 16 
 
 (+ 2 (if (> b a) b a)) 
 ;Value: 6 
 
 (* (cond ((> a b) a) 
-		 ((< a b) b) 
-		 (else -1)) 
-   (+ a 1)) 
+		((< a b) b) 
+		(else -1)) 
+ 	(+ a 1)) 
 ;Value: 16
